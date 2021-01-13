@@ -17,11 +17,10 @@ export default class Header extends Component {
                             <li className="nav-item">
                                 <NavLink className={styles.overview} to="/overview">Overview</NavLink>
                             </li>
+                            <li className="nav-item">
+                                <NavLink className={styles.overview} to="/indonesia">Indonesia</NavLink>
+                            </li>
                         </ul>
-                        <form className="form-inline my-2 my-lg-0">
-                            <input type="search" className="form-control" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
                     </div>
                 </nav>
             </div>
