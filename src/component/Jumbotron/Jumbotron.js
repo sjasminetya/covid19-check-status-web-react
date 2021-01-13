@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import styles from './Jumbotron.module.css'
+import {Link} from 'react-router-dom'
 
 export default class Jumbotron extends Component {
     render() {
@@ -11,7 +12,7 @@ export default class Jumbotron extends Component {
                 <p>The best way to prevent and slow down transmission is to be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face. </p>
                 <p>The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).</p>
                 <p>Source: www.who.int</p>
-                <button className="btn btn-primary btn-lg">Check Status Coronavirus in the world</button>
+                <Link className="btn btn-primary btn-lg" to="/overview">Check Status Coronavirus in the world</Link>
             </div>
         )
     }

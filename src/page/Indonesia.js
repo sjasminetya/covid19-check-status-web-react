@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import Header from '../component/Header/Header'
 import Jumbotron from '../component/Jumbotron/Jumbotron'
 import Footer from '../component/Footer/Footer'
-import Chart from '../component/Chart/Indonesia/Chart'
+import Confirm from '../component/Chart/Indonesia/ConfirmChartId'
+import Death from '../component/Chart/Indonesia/DeathChartId'
 
 export default class Overview extends Component {
     render() {
@@ -12,7 +13,10 @@ export default class Overview extends Component {
                 <Jumbotron/>
                 <div className="container">
                     <h1>COVID-19 Indonesia Condition</h1>
-                    <Chart/>
+                    <Confirm/>
+                    <br/>
+                    <Death/>
+                    <br/>
                 </div>
                 <Footer/>
             </div>
