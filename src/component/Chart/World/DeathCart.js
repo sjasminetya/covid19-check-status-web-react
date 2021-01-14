@@ -8,7 +8,7 @@ export default class DeathCart extends Component {
 
     componentDidMount() {
         const myChartRef = this.chartRef.current.getContext('2d')
-        let date = []
+        let date = []                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
         let death = []
 
         axios.get(`${process.env.REACT_APP_API_COVID19}world?from=2020-03-01&to=${new Date()}`)
@@ -28,7 +28,7 @@ export default class DeathCart extends Component {
                             label: 'Death',
                             data: death,
                             fill: false,
-                            borderColor: "#ff0000"
+                            borderColor: "#F01159"
                         }
                     ]
                 }

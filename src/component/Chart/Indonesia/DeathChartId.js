@@ -24,8 +24,8 @@ export default function DeathChartId() {
                     {
                         label: 'Death',
                         data: death,
-                        borderColor: 'rgba(255, 0, 0)',
-                        backgroundColor: 'rgba(255, 179, 179)'
+                        borderColor: '#F01159',
+                        backgroundColor: '#F01159'
                     }
                 ]
             })

@@ -1,14 +1,19 @@
 .overview {
-    color: #413d3d;
+    color: #ffffff;
     font-size: 20px;
     margin-right: 20px;
 }
 
 .overview:hover {
-    color: #413d3d;
+    color: #ffffff;
     text-decoration: none;
+    border-bottom: 4px solid #F47983;
 }
 
 .overview:focus {
-    text-decoration: underline;
+    border-bottom: 4px solid #F47983;
+}
+
+.overview:active {
+    border-bottom: 4px solid #F47983;
 }

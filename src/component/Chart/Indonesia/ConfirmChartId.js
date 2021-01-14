@@ -24,7 +24,7 @@ export default function ConfirmChartId() {
                     {
                         label: 'Confirmed',
                         data: confirm,
-                        backgroundColor: 'rgba(75,192,192,0.4)',
+                        backgroundColor: '#82CDE5',
                         borderColor: 'rgba(75,192,192,1)'
                     }
                 ]

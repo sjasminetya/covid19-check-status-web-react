@@ -29,7 +29,7 @@ export default class ConfirmChart extends Component {
                             label: 'Confirmed',
                             data: confirm,
                             fill: false,
-                            borderColor: "#98B9AB"
+                            borderColor: "#82CDE5"
                         }
                     ]
                 }

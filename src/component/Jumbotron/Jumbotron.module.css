@@ -1,3 +1,17 @@
 .corona {
-    text-decoration: underline;
+    color: #82CDE5;
+    font-family: 'Lora', serif;
+}
+
+.world {
+    width: 300px;
+    height: 50px;
+    background-color: #82CDE5;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.world:focus {
+    outline: none;
 }
