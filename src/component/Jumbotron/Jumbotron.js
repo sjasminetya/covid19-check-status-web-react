@@ -17,8 +17,9 @@ export default function Jumbotron() {
                 <p>The best way to prevent and slow down transmission is to be well informed about the COVID-19 virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face. </p>
                 <p>The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette (for example, by coughing into a flexed elbow).</p>
                 <p>Source: www.who.int</p>
-                <Button title="Check Status Coronavirus in the world" type="submit" className={styles.world} click={routeOverview} />
+                <Button title="Check Status Coronavirus in the world" type="submit" className={styles['btn-world']} click={routeOverview} />
             </div>
+            {/* <a href='https://www.freepik.com/vectors/infographic'>Infographic vector created by pch.vector - www.freepik.com</a> */}
         </div>
     )
 }

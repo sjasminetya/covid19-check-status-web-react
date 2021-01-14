@@ -3,7 +3,7 @@
     font-family: 'Lora', serif;
 }
 
-.world {
+.btn-world {
     width: 300px;
     height: 50px;
     background-color: #82CDE5;
@@ -12,6 +12,6 @@
     color: #ffffff;
 }
 
-.world:focus {
+.btn-world:focus {
     outline: none;
 }
