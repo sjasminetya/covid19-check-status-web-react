@@ -12,7 +12,7 @@ export default class Overview extends Component {
                 <Header/>
                 <Jumbotron/>
                 <div className="container">
-                    <h1>COVID-19 In The World</h1>
+                    <h1>COVID-19 Global Situation</h1>
                     <Confirm/>
                     <br/>
                     <Death/>

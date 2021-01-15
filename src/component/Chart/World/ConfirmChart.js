@@ -21,15 +21,13 @@ export default class ConfirmChart extends Component {
                 date.push(moment(item.Date).format("MMM Do YY")) 
             )
             new Chart(myChartRef, {
-                type: 'line',
+                type: 'doughnut',
                 data: {
-                    labels: date,
                     datasets: [
                         {
                             label: 'Confirmed',
                             data: confirm,
-                            fill: false,
-                            borderColor: "#82CDE5"
+                            backgroundColor: "#82CDE5"
                         }
                     ]
                 }
