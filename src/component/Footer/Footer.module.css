@@ -1,5 +1,9 @@
 footer {
-    position: fixed;
-    background-color: #5c5c5c;
-    bottom: 0;
+    height: 100px;
+    margin-top: 40px;
+}
+
+.text-footer {
+    margin: 20px 0 20px 0;
+    text-align: center;
 }
