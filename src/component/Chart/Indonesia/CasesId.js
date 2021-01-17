@@ -7,16 +7,16 @@ export default class CasesId extends Component {
 
     componentDidMount() {
         const myDoughnutRef = this.doughnutRef.current.getContext('2d')
-        let positif = []
-        let meninggal = []
-        let sembuh = []
+        let positive = []
+        let deaths = []
+        let recovered = []
 
         axios.get(`${process.env.REACT_APP_API_COVID19_INDONESIA}`)
         .then(res => {
             console.log(res.data)
-            positif.push(res.data.positif)
-            sembuh.push(res.data.sembuh)
-            meninggal.push(res.data.meninggal)
+            positive.push(res.data.positif)
+            recovered.push(res.data.sembuh)
+            deaths.push(res.data.meninggal)
             new Doughnut(myDoughnutRef, {
                 type: 'doughnut',
                 data: {
@@ -27,7 +27,7 @@ export default class CasesId extends Component {
                     ],
                     datasets: [
                         {
-                            data: [positif, sembuh, meninggal],
+                            data: [positive, recovered, deaths],
                             backgroundColor: ['#82CDE5', '#DFF8FE', '#F01159']
                         }
                     ]

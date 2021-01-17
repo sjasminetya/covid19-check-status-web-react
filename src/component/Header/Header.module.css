@@ -7,13 +7,4 @@
 .overview:hover {
     color: #ffffff;
     text-decoration: none;
-    border-bottom: 4px solid #F47983;
-}
-
-.overview:focus {
-    border-bottom: 4px solid #F47983;
-}
-
-.overview:active {
-    border-bottom: 4px solid #F47983;
 }

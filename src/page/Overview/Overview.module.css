@@ -1,0 +1,23 @@
+.total-cases,
+.total-death,
+.total-recovered {
+    background-color: #82CDE5;
+    padding: 10px 0 10px 20px;
+    height: fit-content;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.total-death {
+    background-color: #B11E31;
+}
+
+.total-recovered {
+    background-color: #096344;
+}
+
+.card-box {
+    display: flex;
+    margin-bottom: 50px;
+}
