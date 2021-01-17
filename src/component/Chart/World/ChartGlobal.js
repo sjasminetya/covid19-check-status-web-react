@@ -15,15 +15,12 @@ export default class ChartGlobal extends Component {
         axios.get(`${process.env.REACT_APP_API_COVID19_WORLD}/daily`)
         .then(res => {
             console.log(res.data)
-            res.data.map((item) =>
-                confirm.push(item.confirmed.total) 
-            )
-            res.data.map((item) =>
-                date.push(moment(item.reportDate).format("MMM Do YYYY")) 
-            )
-            res.data.map((item) =>
-                deaths.push(item.deaths.total)
-            )
+            const data = res.data
+            for (let dataObj of data) {
+                confirm.push(dataObj.confirmed.total)
+                date.push(moment(dataObj.reportDate).format("MMM Do YYYY"))
+                deaths.push(dataObj.deaths.total)
+            }
             new Chart(myChartRef, {
                 type: 'line',
                 data: {

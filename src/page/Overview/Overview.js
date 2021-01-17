@@ -21,7 +21,7 @@ export default class Overview extends Component {
     componentDidMount() {
         axios.get(`${process.env.REACT_APP_API_COVID19_WORLD}`)
         .then(res => {
-            console.log(res.data.data)
+            console.log(res.data)
             const data = res.data
             this.setState({
                 death: data.deaths.value,
