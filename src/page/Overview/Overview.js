@@ -42,13 +42,13 @@ export default class Overview extends Component {
                 <Jumbotron/>
                 <div className="container">
                     <h1>COVID-19 Global Situation</h1>
-                    <p>Update at {this.state.date}</p>
+                    <h4>Update at {this.state.date}</h4>
                     <div className={styles['card-box']}>
                         <Card className={styles['total-cases']} title="Confirm" text={this.state.confirm} />
                         <Card className={styles['total-death']} title="Deaths" text={this.state.death} />
                         <Card className={styles['total-recovered']} title="Recovered" text={this.state.recovered} />
                     </div>
-                    <h3>Statistics COVID19 in Global</h3>
+                    <h3>Statistics COVID-19 in Global</h3>
                     <Chart/>
                 </div>
                 <Footer/>

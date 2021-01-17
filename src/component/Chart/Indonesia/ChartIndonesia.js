@@ -2,33 +2,43 @@ import React, { Component } from 'react'
 import Doughnut from 'chart.js'
 import axios from 'axios'
 
-export default class CasesId extends Component {
+export default class ChartIndonesia extends Component {
     doughnutRef = React.createRef()
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            positive: [],
+            deaths: [],
+            recovered: []
+        }
+    }
 
     componentDidMount() {
         const myDoughnutRef = this.doughnutRef.current.getContext('2d')
-        let positive = []
-        let deaths = []
-        let recovered = []
 
         axios.get(`${process.env.REACT_APP_API_COVID19_INDONESIA}`)
         .then(res => {
             console.log(res.data)
-            positive.push(res.data.positif)
-            recovered.push(res.data.sembuh)
-            deaths.push(res.data.meninggal)
+            const data = res.data
+            console.log(data)
+            this.setState({
+                positive: data.positif,
+                deaths: data.meninggal,
+                recovered: data.sembuh
+            })
             new Doughnut(myDoughnutRef, {
                 type: 'doughnut',
                 data: {
                     labels: [
                         'Positive',
-                        'Recovered',
-                        'Death'
+                        'Deaths',
+                        'Recovered'
                     ],
                     datasets: [
                         {
-                            data: [positive, recovered, deaths],
-                            backgroundColor: ['#82CDE5', '#DFF8FE', '#F01159']
+                            data: [this.state.positive, this.state.deaths, this.state.recovered],
+                            backgroundColor: ['#82CDE5', '#B11E31', '#096344']
                         }
                     ]
                 }
