@@ -16,10 +16,10 @@ export default class ChartGlobal extends Component {
         .then(res => {
             console.log(res.data)
             const data = res.data
-            for (let dataObj of data) {
-                confirm.push(dataObj.confirmed.total)
-                date.push(moment(dataObj.reportDate).format("MMM Do YYYY"))
-                deaths.push(dataObj.deaths.total)
+            for (let dataCovid of data) {
+                confirm.push(dataCovid.confirmed.total)
+                date.push(moment(dataCovid.reportDate).format("MMM Do YYYY"))
+                deaths.push(dataCovid.deaths.total)
             }
             new Chart(myChartRef, {
                 type: 'line',

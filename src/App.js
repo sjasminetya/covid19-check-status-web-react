@@ -1,14 +1,18 @@
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import Overview from './page/Overview/Overview'
-import Indonesia from './page/Indonesia'
+import pageIndonesia from './page/pageIndonesia'
+import {Provider} from 'react-redux'
+import store from './configs/redux/store'
 
 function App() {
   return (
     <div>
-      <Router>
-        <Route path="/overview" component={Overview}></Route>
-        <Route path="/indonesia" component={Indonesia}></Route>
-      </Router>
+      <Provider store={store}>
+        <Router>
+          <Route path="/overview" component={Overview}></Route>
+          <Route path="/indonesia" component={pageIndonesia}></Route>
+        </Router>
+      </Provider>
     </div>
   );
 }
